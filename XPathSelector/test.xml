@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xidml Version="2.41">
+  <Parameters>
+    <ParameterSet>
+      <Parameter Name="MICRO_TIME_0_J2_0">
+        <ParameterProperties>
+          <ParameterTypeReference>MICRO_TIME_0_J2_0</ParameterTypeReference>
+          <DataFormat>BinaryCodedDecimal</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/BCU/101/B</InstrumentReference>
+            <VendorMap>TimeMicro</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="LO_TIME_0_J2_0">
+        <ParameterProperties>
+          <ParameterTypeReference>LO_TIME_0_J2_0</ParameterTypeReference>
+          <DataFormat>BinaryCodedDecimal</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/BCU/101/B</InstrumentReference>
+            <VendorMap>TimeLo</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="HI_TIME_0_J2_0">
+        <ParameterProperties>
+          <ParameterTypeReference>Unitless</ParameterTypeReference>
+          <DataFormat>BinaryCodedDecimal</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/BCU/101/B</InstrumentReference>
+            <VendorMap>TimeHi</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="STATUS_0_J2_0">
+        <ParameterProperties>
+          <ParameterTypeReference>Unitless</ParameterTypeReference>
+          <DataFormat>BitVector</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/BCU/101/B</InstrumentReference>
+            <VendorMap>Status</VendorMap>
+          </Signal>
+        </Source>
+        <Destination>
+          <Package>
+            <InstrumentReference>KAD/BCU/101/B</InstrumentReference>
+            <PackageReference>Frame_1</PackageReference>
+            <ParameterMap>STATUS_0_J2_0</ParameterMap>
+          </Package>
+        </Destination>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch0">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(0)</VendorMap>
+          </Signal>
+        </Source>
+        <Destination>
+          <Package>
+            <InstrumentReference>KAD/BCU/101/B</InstrumentReference>
+            <PackageReference>Frame_1</PackageReference>
+            <ParameterMap>ADC120_0_J5_Ch0</ParameterMap>
+          </Package>
+        </Destination>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch2">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(2)</VendorMap>
+          </Signal>
+        </Source>
+        <Destination>
+          <Package>
+            <InstrumentReference>KAD/BCU/101/B</InstrumentReference>
+            <PackageReference>Frame_1</PackageReference>
+            <ParameterMap>ADC120_0_J5_Ch2</ParameterMap>
+          </Package>
+        </Destination>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch3">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(3)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch7">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(7)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch10">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(10)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch9">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(9)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch1">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(1)</VendorMap>
+          </Signal>
+        </Source>
+        <Destination>
+          <Package>
+            <InstrumentReference>KAD/BCU/101/B</InstrumentReference>
+            <PackageReference>Frame_1</PackageReference>
+            <ParameterMap>ADC120_0_J5_Ch1</ParameterMap>
+          </Package>
+        </Destination>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch5">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(5)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch6">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(6)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch8">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(8)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch11">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(11)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+      <Parameter Name="ADC120_0_J5_Ch4">
+        <ParameterProperties>
+          <ParameterTypeReference>Volt</ParameterTypeReference>
+          <RangeMaximum>0.1</RangeMaximum>
+          <RangeMinimum>-0.1</RangeMinimum>
+          <DataFormat>OffsetBinary</DataFormat>
+          <SizeInBits>16</SizeInBits>
+        </ParameterProperties>
+        <Source>
+          <Signal>
+            <InstrumentReference>KAD/ADC/120/100m</InstrumentReference>
+            <VendorMap>Channel(4)</VendorMap>
+          </Signal>
+        </Source>
+      </Parameter>
+    </ParameterSet>
+    <ParameterTypeSet>
+      <ParameterType Name="MICRO_TIME_0_J2_0">
+        <BaseUnit>Second</BaseUnit>
+        <Scale>1E-6</Scale>
+      </ParameterType>
+      <ParameterType Name="LO_TIME_0_J2_0">
+        <BaseUnit>Second</BaseUnit>
+        <Scale>1E-2</Scale>
+      </ParameterType>
+      <ParameterType Name="Unitless">
+        <BaseUnit>Unitless</BaseUnit>
+      </ParameterType>
+      <ParameterType Name="Volt">
+        <BaseUnit>Volt</BaseUnit>
+      </ParameterType>
+    </ParameterTypeSet>
+  </Parameters>
+  <Instrumentation>
+    <InstrumentSet>
+      <X-DAU-1.1 Name="KAM/CHS/09U">
+        <Manufacturer>
+          <Name>ACRA CONTROL</Name>
+          <PartReference>KAM/CHS/09U</PartReference>
+          <SerialNumber>DAU1</SerialNumber>
+        </Manufacturer>
+        <InstrumentSet>
+          <SubLocation Name="5">
+            <X-Module-Analog-In-1.2 Name="KAD/ADC/120/100m">
+              <Manufacturer>
+                <Name>ACRA CONTROL</Name>
+                <PartReference>KAD/ADC/120/100m</PartReference>
+                <SerialNumber/>
+              </Manufacturer>
+              <Settings>
+                <Module-Analog-In-1.2>
+                  <Channel Name="Channel(0)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(1)">
+                    <FilterCutoff>0.500</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(2)">
+                    <FilterCutoff>1.000</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(3)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(4)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(5)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(6)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(7)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(8)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(9)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(10)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                  <Channel Name="Channel(11)">
+                    <FilterCutoff>0.250</FilterCutoff>
+                    <ExcitationAmplitude>0</ExcitationAmplitude>
+                  </Channel>
+                </Module-Analog-In-1.2>
+              </Settings>
+            </X-Module-Analog-In-1.2>
+          </SubLocation>
+          <SubLocation Name="2">
+            <X-DAU-Controller-PCM-1.2 Name="KAD/BCU/101/B">
+              <Manufacturer>
+                <Name>ACRA CONTROL</Name>
+                <PartReference>KAD/BCU/101/B</PartReference>
+                <SerialNumber/>
+              </Manufacturer>
+              <InterConnect VendorName="PCM-OUT(0)">DL_KAD/BCU/101/B_M2</InterConnect>
+              <InterConnect VendorName="PROG">DL_KAD/BCU/101/B_M2_1</InterConnect>
+              <InterConnect VendorName="X-SYNC">DL_KAD/BCU/101/B_M2_2</InterConnect>
+              <InterConnect VendorName="PCM-OUT(1)">DL_KAD/BCU/101/B_M2_3</InterConnect>
+              <InterConnect VendorName="PCM-OUT(2)">DL_KAD/BCU/101/B_M2_4</InterConnect>
+              <InterConnect VendorName="PCM-OUT(3)">DL_KAD/BCU/101/B_M2_5</InterConnect>
+              <Settings>
+                <DAU-Controller-PCM-1.2>
+                  <DAU_ID>0</DAU_ID>
+                </DAU-Controller-PCM-1.2>
+              </Settings>
+              <Addendum xmlns:acra="www.acracontrol.com/Schemas">
+                <acra:Settings>
+                  <acra:XSyncMode>Auto</acra:XSyncMode>
+                  <acra:XSyncCableMeters>0</acra:XSyncCableMeters>
+                  <acra:XSyncDelayPerMeter_nS>7</acra:XSyncDelayPerMeter_nS>
+                </acra:Settings>
+              </Addendum>
+            </X-DAU-Controller-PCM-1.2>
+          </SubLocation>
+        </InstrumentSet>
+      </X-DAU-1.1>
+    </InstrumentSet>
+  </Instrumentation>
+  <Packages>
+    <PackageSet>
+      <X-IRIG-106-Ch-4-1.2 Name="Frame_1">
+        <ReferencedToAbsoluteTime>Yes</ReferencedToAbsoluteTime>
+        <PackageRate>2</PackageRate>
+        <DataLinkReference>DL_KAD/BCU/101/B_M2</DataLinkReference>
+        <Properties>
+          <MajorFrameProperties>
+            <BitsPerMinorFrame>4096</BitsPerMinorFrame>
+            <MinorFramesPerMajorFrame>256</MinorFramesPerMajorFrame>
+            <DefaultDataBitsPerWord>16</DefaultDataBitsPerWord>
+            <DefaultMostSignificantBit>First</DefaultMostSignificantBit>
+            <FillPattern>AAAA</FillPattern>
+            <DefaultParity>None</DefaultParity>
+          </MajorFrameProperties>
+          <SynchronizationStrategy>
+            <SyncWord>11111110011010110010100001000000</SyncWord>
+            <SubframeSynchronizationStrategy>
+              <SFID>
+                <MinorFrameOffset_Bits>32</MinorFrameOffset_Bits>
+                <StartValue>0</StartValue>
+                <Increment>1</Increment>
+                <MostSignificantBit>First</MostSignificantBit>
+              </SFID>
+            </SubframeSynchronizationStrategy>
+          </SynchronizationStrategy>
+          <Modulation>
+            <PCMCode>NRZ-L</PCMCode>
+            <DclkPhase>0</DclkPhase>
+            <PCMPolarity>False</PCMPolarity>
+          </Modulation>
+        </Properties>
+        <Content>
+          <Parameter Name="ADC120_0_J5_Ch0">
+            <NumberOfDataBits>16</NumberOfDataBits>
+            <Location>
+              <MinorFrameNumber>1</MinorFrameNumber>
+              <Offset_Bits>64</Offset_Bits>
+              <Occurrences>512</Occurrences>
+            </Location>
+          </Parameter>
+          <Parameter Name="ADC120_0_J5_Ch1">
+            <NumberOfDataBits>16</NumberOfDataBits>
+            <Location>
+              <MinorFrameNumber>1</MinorFrameNumber>
+              <Offset_Bits>80</Offset_Bits>
+              <Occurrences>512</Occurrences>
+            </Location>
+          </Parameter>
+          <Parameter Name="ADC120_0_J5_Ch2">
+            <NumberOfDataBits>16</NumberOfDataBits>
+            <Location>
+              <MinorFrameNumber>1</MinorFrameNumber>
+              <Offset_Bits>96</Offset_Bits>
+              <Occurrences>512</Occurrences>
+            </Location>
+          </Parameter>
+          <Parameter Name="STATUS_0_J2_0">
+            <NumberOfDataBits>16</NumberOfDataBits>
+            <Location>
+              <MinorFrameNumber>1</MinorFrameNumber>
+              <Offset_Bits>48</Offset_Bits>
+              <Occurrences>2</Occurrences>
+            </Location>
+          </Parameter>
+        </Content>
+      </X-IRIG-106-Ch-4-1.2>
+    </PackageSet>
+  </Packages>
+  <DataLinks>
+    <DataLinkSet>
+      <X-DataLink-1.3 Name="DL_KAD/BCU/101/B_M2">
+        <Type>RS-422</Type>
+      </X-DataLink-1.3>
+      <X-DataLink-1.3 Name="DL_KAD/BCU/101/B_M2_1">
+        <Type>RS-422</Type>
+      </X-DataLink-1.3>
+      <X-DataLink-1.3 Name="DL_KAD/BCU/101/B_M2_2">
+        <Type>X-SYNC</Type>
+      </X-DataLink-1.3>
+      <X-DataLink-1.3 Name="DL_KAD/BCU/101/B_M2_3">
+        <Type>RS-422</Type>
+      </X-DataLink-1.3>
+      <X-DataLink-1.3 Name="DL_KAD/BCU/101/B_M2_4">
+        <Type>RS-422</Type>
+      </X-DataLink-1.3>
+      <X-DataLink-1.3 Name="DL_KAD/BCU/101/B_M2_5">
+        <Type>RS-422</Type>
+      </X-DataLink-1.3>
+    </DataLinkSet>
+  </DataLinks>
+</xidml>
